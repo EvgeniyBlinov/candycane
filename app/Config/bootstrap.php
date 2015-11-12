@@ -1,6 +1,6 @@
 <?php
 define('CANDYCANE_VERSION', '0.9.5');
-Configure::write('app_title', 'Candycane');
+Configure::write('app_title', 'Office');
 setlocale(LC_CTYPE,'C');
 
 if ( file_exists('../../vendor/autoload.php')) {
