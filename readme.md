@@ -1,3 +1,5 @@
+[![MIT License][license-image]][license-url]
+
 # CandyCane #
 
 CandyCane is a issue tracking system. The original implementation on which it is based, is [Redmine](http://www.redmine.org)
@@ -109,3 +111,11 @@ I try to merge as much as possible. Please fork the repository if you find somet
 - move plugins url to config
 - change login page layout
 - add plugins to gitignore
+
+## License
+
+[![MIT License][license-image]][license-url]
+
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
