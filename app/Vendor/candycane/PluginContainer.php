@@ -8,7 +8,7 @@ class PluginContainer extends Object {
 
 	protected $__entries = array();
 
-	protected $__entries_url = 'https://raw.github.com/yandod/candycane-plugins/master/entries2.json';
+	protected $__entries_url = 'https://raw.githubusercontent.com/EvgeniyBlinov/candycane-plugins/master/entries2.json';
 
 	public function  __construct() {
 		$this->__init();
@@ -44,11 +44,18 @@ class PluginContainer extends Object {
 				)
 			)
 		);
-		$json = @file_get_contents($this->__entries_url,false,$context);
-		if ($json == false) {
-			return false;
+		$pluginsUrl = Configure::read('plugins_entries_urls');
+		$remote = array();
+		foreach ($pluginsUrl as $url) {
+			$json = @file_get_contents($url, false, $context);
+			if ($json == false) {
+				return false;
+			}
+			$remoteSrc = json_decode($json,true);
+			if (is_array($remote)) {
+				$remote = array_merge($remote, $remoteSrc);
+			}
 		}
-		$remote = json_decode($json,true);
 		$local = $this->__entries;
 		foreach ($remote as $id => $entry) {
 			if (isset($local[$id])) {

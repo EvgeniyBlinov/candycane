@@ -1,3 +1,5 @@
+[![MIT License][license-image]][license-url]
+
 # CandyCane #
 
 CandyCane is a issue tracking system. The original implementation on which it is based, is [Redmine](http://www.redmine.org)
@@ -103,3 +105,17 @@ CandyCane is using CakePHP v2.3.
 We will appreciate any pull requests.
 
 I try to merge as much as possible. Please fork the repository if you find something you want to fix, and submit a pull request.
+
+## Centnet updates
+
+- move plugins url to config
+- change login page layout
+- add plugins to gitignore
+
+## License
+
+[![MIT License][license-image]][license-url]
+
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE

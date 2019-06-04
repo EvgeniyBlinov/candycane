@@ -2,7 +2,7 @@
 
 $vars = array(
 'app_title' =>
-  'CandyCane',
+  'Office',
 'app_subtitle' =>
   'Project management',
 'welcome_text' =>

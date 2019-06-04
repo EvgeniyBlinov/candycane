@@ -29,3 +29,6 @@ vendor
 
 ## build artifacts
 build
+
+app/Plugin/CcCtl/*
+!app/Plugin/CcInstall/*
