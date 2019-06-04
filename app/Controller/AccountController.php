@@ -179,6 +179,7 @@ class AccountController extends AppController
      */
     public function login()
     {
+        $this->layout = 'login';
         $this->set('setting', $this->Setting);
 
         if (isset($this->request->query['back_url'])) {
@@ -207,7 +208,7 @@ class AccountController extends AppController
             // Onthefly creation failed, display the registration form to fill/fix attributes
             #@user = user
             #session[:auth_source_registration] = {:login => user.login, :auth_source_id => user.auth_source_id }
-            $this->render('register');
+            $this->render('login');
         } else {
             // Valid user
             $this->logged_user($user);

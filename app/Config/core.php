@@ -277,3 +277,8 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+Configure::write('plugins_entries_urls', array(
+    'https://raw.githubusercontent.com/yandod/candycane-plugins/master/entries2.json',
+    'https://raw.githubusercontent.com/EvgeniyBlinov/candycane-plugins/master/entries2.json'
+));
