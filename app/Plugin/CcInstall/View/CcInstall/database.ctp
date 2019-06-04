@@ -4,9 +4,9 @@
     <?php
         echo $this->Form->create('Install', array('url' => array('plugin' => 'cc_install', 'controller' => 'cc_install', 'action' => 'database')));
         echo $this->Form->input('Install.datasource', array('type' => 'select', 'label' => 'Driver', 'options' => array('mysql' => 'MySQL', 'postgres'=>'PostgreSQL', 'sqlite' => "Sqlite")));
-        echo $this->Form->input('Install.host', array('label' => 'Host', 'value' => 'localhost'));
-        echo $this->Form->input('Install.login', array('label' => 'User / Login', 'value' => 'root'));
-        echo $this->Form->input('Install.password', array('label' => 'Password'));
+        echo $this->Form->input('Install.host', array('label' => 'Host', 'value' => 'db'));
+        echo $this->Form->input('Install.login', array('label' => 'User / Login', 'value' => 'default'));
+        echo $this->Form->input('Install.password', array('label' => 'Password', 'value' => 'secret'));
         echo $this->Form->input('Install.database', array('label' => __('Exsisting database name'), 'value' => 'candycane'));
         echo $this->Form->input('Install.filename', array('label' => 'Filename. You may include relative path from app/webroot', 'value' => 'candycane.sqlite'));
         echo $this->Form->input('Install.prefix', array('label' => __('Prefix for table name.(only for mysql, if you need)'), 'value' => ''));
