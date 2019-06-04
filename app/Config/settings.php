@@ -8,9 +8,9 @@ $vars = array(
 'welcome_text' =>
   '',
 'login_required' =>
-  '0',
+  '1',
 'self_registration' =>
-  '3',
+  '0',
 'lost_password' =>
   '1',
 'attachment_max_size' =>
