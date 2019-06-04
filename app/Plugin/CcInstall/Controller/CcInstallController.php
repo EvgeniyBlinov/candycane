@@ -89,8 +89,8 @@ class CcInstallController extends CcInstallAppController {
             }
 
 			if ($this->request->data['Install']['datasource'] === 'mysql') {
-				$mysql = mysql_connect($this->request->data['Install']['host'], $this->request->data['Install']['login'], $this->request->data['Install']['password']);
-                if (mysql_select_db($mysql, $this->request->data['Install']['database'])) {
+				$mysql = mysqli_connect($this->request->data['Install']['host'], $this->request->data['Install']['login'], $this->request->data['Install']['password']);
+                if (mysqli_select_db($mysql, $this->request->data['Install']['database'])) {
                     $check = true ;
                 }
 			} else if ($this->request->data['Install']['datasource'] === 'postgres') {
